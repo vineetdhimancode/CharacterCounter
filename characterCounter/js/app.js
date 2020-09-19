@@ -2,7 +2,8 @@ const str = document.querySelector('#string');
 const result = document.querySelector('.result');
 str.addEventListener('paste', eventFunction);
 str.addEventListener('keypress', eventFunction);
-str.addEventListener('keyup', eventFunction);
+// str.addEventListener('keyup', eventFunction);
+str.addEventListener('keydown', eventFunction);
 str.addEventListener('cut', eventFunction);
 str.addEventListener('change', eventFunction);
 
@@ -26,7 +27,7 @@ function showMsg(charCount) {
     } else if (charCount <= 0) {
         result.classList.add('text-danger');
         result.classList.remove('text-success');
-        result.innerHTML = `No character captured!`;
+        result.innerHTML = `Khali field hai Bro!`;
     } else {
         result.classList.add('text-success');
         result.classList.remove('text-danger');

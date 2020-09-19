@@ -1,9 +1,26 @@
 body {
-    background-color: aliceblue;
+    background: url('../img/img2.jpg');
+    background-size: cover;
+    /* background-color: aliceblue; */
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .form {
     padding-top: 15rem;
+}
+
+.form .heading {
+    text-align: center;
+    color: #1db954;
 }
 
 .result {
