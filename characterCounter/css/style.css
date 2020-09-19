@@ -1,0 +1,11 @@
+body {
+    background-color: aliceblue;
+}
+
+.form {
+    padding-top: 15rem;
+}
+
+.result {
+    font-size: 35px;
+}
